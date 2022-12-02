@@ -14,11 +14,14 @@
   "author": "Jahyun Oh",
   "license": "ISC",
   "devDependencies": {
+    "@types/lodash": "^4.14.191",
     "@types/node": "^16.11.6",
     "aocrunner": "^1.6.1",
     "prettier": "^2.4.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
   "engines": {
     "node": ">=16.13.0"
   }
