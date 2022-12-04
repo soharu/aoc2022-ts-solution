@@ -5,7 +5,7 @@ const parseInput = (rawInput: string) => `${rawInput}\n`.split('\n')
 const sumOfMaxCalories = (lines: Array<string>, count: number): number => {
     const [calories] = lines.reduce(
         ([arr, sum], line) => {
-            const n = parseInt(line)
+            const n = parseInt(line, 10)
             return isNaN(n) ? [[...arr, sum], 0] : [arr, sum + n]
         },
         [Array<number>(), 0],

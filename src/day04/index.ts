@@ -13,8 +13,8 @@ const parseInput = (rawInput: string) => {
         .split('\n')
         .map((line) => line.split(','))
         .map(([first, second]) => {
-            const [x1, y1] = first.split('-').map((x) => parseInt(x))
-            const [x2, y2] = second.split('-').map((x) => parseInt(x))
+            const [x1, y1] = first.split('-').map((x) => parseInt(x, 10))
+            const [x2, y2] = second.split('-').map((x) => parseInt(x, 10))
             return [
                 { first: x1, last: y1 },
                 { first: x2, last: y2 },
